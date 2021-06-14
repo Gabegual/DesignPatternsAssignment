@@ -1,0 +1,47 @@
+Template Method ? or Strategy Method ? or Factory ?
+
+design a skeleton algo for the base problem solve, then in subclasses take the
+also and break it down for specific use in the subclasses 
+
+
+design multiple algo for one problem that breakdown into subclasses each one with
+its seperate objects to solve the problem 
+
+creating an interface for solving the first problem in a super class 
+but allows the subclasses to change the type of object that will be created
+
+--------------------------------------------------------------------------------------
+What is the first Problem ?
+
+The first problem is:
+design a method(s) that read from a file and verifies that the card number is a 
+possible account number
+
+what is the second problem ?
+Create an instance of the appropriate card class (object) (what design pattern can 
+be used for that ?)
+
+---------------------------------------------------------------------------------------
+What type of design pattern could I use ?
+
+i think i can use 3 types of design patterns, template/strategy/ or factory.
+the factory method provides a interface for creating object in a subper class, but allows subclasses
+to alter the type of objects will be created.
+
+the only problem i see with factory would be adding a new card type/number, creating a new object
+would not work ?
+
+Template method i think would work well, because creating a skeleton algorithm in a super class and then
+having the subclasses override would make taking any specific card/number and produce an object 
+and taking any new card types/numbers in the super class would be able then be able to break down in the subclasses
+
+what might be wrong about this method, this might take too long to produce an object, overriding the super class might 
+cause errors into taking in any objects.
+
+The last method to use would be the Strategy method, this type would define seperate algorithms in seperate classes and makes 
+the objects interchangeable.
+
+the problem with this would be creating a lot of algorithms depending on what type of cards/card numbers would slow down the program 
+and making the objects interchangable wouldnt work if an object is specific and can not be changed 
+
+--------------------------------------------------------------------------------------------
